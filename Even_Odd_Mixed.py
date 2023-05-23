@@ -1,0 +1,19 @@
+n=int(input())
+temp=n
+count=0
+count1=0
+count2=0
+while(temp>0):
+    r=temp%10
+    count+=1
+    if(r%2==0):
+        count1+=1
+    if(r%2!=0):
+        count2+=1
+    temp=temp//10
+if(count1==count):
+    print('Even')
+elif(count2==count):
+    print('Odd')
+else:
+    print('Mixed')
